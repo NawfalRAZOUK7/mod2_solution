@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: white;
+}
+
+body h1 {
+    font-size: 32px;
+    text-align: center;
+    color: black;
+    margin-bottom: 40px;
+}
+
+body section p {
+    padding: 15px;
+    font-size: 18px;
+    position: relative;
+}
+
+.box {
+    background-color: gray;
+    border: 1px solid black;
+    position: relative;
+    height: 200px;
+    overflow: auto;
+}
+
+.title-box {
+    font-size: 20px;
+    width: 150px;
+    border: 1px solid black;
+    font-weight: bold;
+    text-align: center;
+    float: right;
+    top: 0;
+    right: 0;
+    margin: 0;
+    position: absolute;
+}
+
+#box1 {
+    background-color: brown;
+    color: white;
+}
+
+#box2 {
+    background-color: red;
+    color: white;
+}
+
+#box3 {
+    background-color: tomato;
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .box {
+        width: 33.33%;
+        float: right;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .first,
+    .second {
+        width: 50%;
+        margin-bottom: 20px;
+        float: left;
+        padding: 10px;
+    }
+    .third {
+        width: 100%;
+        clear: both;
+    }
+}
+
+@media (max-width: 767px) {
+    .box {
+        margin: 20px;
+        height: 100px;
+        overflow: auto;
+    }
+}
